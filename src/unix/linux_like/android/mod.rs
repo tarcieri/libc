@@ -2791,6 +2791,7 @@ extern "C" {
         >,
         data: *mut ::c_void,
     ) -> ::c_int;
+    pub fn getentropy(buffer: *mut ::c_void, buffer_size: ::size_t) -> ::c_int;
 }
 
 cfg_if! {
