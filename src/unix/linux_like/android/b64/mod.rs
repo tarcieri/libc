@@ -323,6 +323,7 @@ f! {
 
 extern "C" {
     pub fn getauxval(type_: ::c_ulong) -> ::c_ulong;
+    pub fn getentropy(buffer: *mut ::c_void, buffer_size: ::size_t) -> ::c_int;
 }
 
 cfg_if! {
